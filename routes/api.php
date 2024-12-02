@@ -21,3 +21,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::get('/positions',[MainController::class, 'positions']);
 Route::get('/users/{id}', [MainController::class, 'get_user_by_id']);
+Route::get('/users',[MainController::class, 'get_users_list']);
